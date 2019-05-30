@@ -1,0 +1,289 @@
+/* stylelint-disable selector-list-comma-newline-after */
+
+@media (min-width: 768px) {
+  .modal-body-storefront {
+    height: 500px;
+    width: 100%;
+    overflow-y: auto;
+  }
+  .storefront {
+    max-width: 1024px;
+  }
+  .s-pt-4 {
+    padding-top: 1.5rem!important;
+  }
+  .modal-body-product {
+    height: 550px;
+    width: 100%;
+    overflow-y: auto;
+  }
+}
+
+.blog-header {
+  line-height: 1;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
+.trend-price {
+  font-family: Chivo;
+  font-weight: 400;
+  letter-spacing: -.04em;
+  line-height: 1.15em;
+  text-size-adjust: 100%;
+}
+
+.trend-title {
+  font-family: Chivo;
+  font-weight: 600;
+  font-size: 22px;
+  text-size-adjust: 100%;
+}
+
+a, p, button {
+  font-family: 'Roboto', sans-serif;
+}
+
+.light-alert-success {
+  font-weight: 600;
+  font-size: 90%;
+}
+
+.sub-text {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #9ea7a8!important;
+  font-size: 50%;
+  font-weight: 700;
+}
+
+.sub-title-font {
+  font-weight: 600;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #343a40!important;
+  font-size: 150%;
+}
+
+.light-text {
+  font-weight: light;
+  color: #5f6566!important;
+}
+
+.display-4 {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 3rem;
+  }
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-scroller .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+}
+
+.card-img-right {
+  height: 100%;
+  border-radius: 0 3px 3px 0;
+}
+
+.flex-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.h-250 {
+  height: 250px;
+}
+
+@media (min-width: 768px) {
+  .h-md-250 {
+    height: 250px;
+  }
+}
+
+/*
+   * Blog name and description
+   */
+
+.blog-title {
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.blog-description {
+  font-size: 1.1rem;
+  color: #999;
+}
+
+@media (min-width: 40em) {
+  .blog-title {
+    font-size: 3.5rem;
+  }
+}
+
+/* Pagination */
+
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+
+.blog-pagination>.btn {
+  border-radius: 2rem;
+}
+
+/*
+   * Blog posts
+   */
+
+.blog-post {
+  margin-bottom: 4rem;
+}
+
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+}
+
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #999;
+}
+
+.blog-post-margin {
+  max-width: 83.2ex;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-post-text {
+  margin-top: 70px;
+}
+
+@media only screen and (max-width: 768px) {
+  .blog-post-writer {
+    text-align: center;
+  }
+}
+
+/*
+   * Footer
+   */
+
+.blog-footer {
+  padding: 2.5rem 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding-bottom: 200px;
+  /* Margin bottom by footer height */
+}
+
+/* Form */
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signup {
+  width: 100%;
+  max-width: 430px;
+  padding: 15px;
+  margin: auto;
+}
+
+h6.text-uppercase {
+  letter-spacing: .08em
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid #edf2f9;
+  border-radius: .5rem;
+  border-color: rgb(226, 226, 226);
+}
+
+
+/* ---------------------------------------------------- */
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #999;
+  transition: ease-in-out color .15s;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
