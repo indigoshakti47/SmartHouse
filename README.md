@@ -33,7 +33,7 @@ Las pestañas S0, S1, S2 son las entradas de selección, las cuales son enviadas
 ## Diseño de la solución.
 ###### Código Arduino
 Este código nos permite pasar las señales multiplexadas por el 75LS151 a una lógica de arduino capaz de leer cada una de estas, para posteriormente ser enviadas a un servidor web y así configurar una solución IoT completa. Comenzamos importando una librería asíncrona que nos brinda la posibilidad de manejar tiempos de señales diferentes. 
-Código
+###### Código
 
 ```
 /*
@@ -115,8 +115,8 @@ void dispBinary(byte n){
 }
 ```
 
-Código en Python (Conector con arduino por puerto serie utilizando librería Pyserial)
-·   Este código lo conectamos el con arduino mediante el puerto 9600 y al servidor montado en flask por el puerto 5000. Acá se comienza a leer las señales recibidas por el arduino y se revisan cada uno de los cambios que registra el sistema, cada vez que hay un cambio se envía un un request a los Web Sockets del servidor (los cuales explicaremos más adelante. )
+###### Código en Python (Conector con arduino por puerto serie utilizando librería Pyserial)
+Este código lo conectamos el con arduino mediante el puerto 9600 y al servidor montado en flask por el puerto 5000. Acá se comienza a leer las señales recibidas por el arduino y se revisan cada uno de los cambios que registra el sistema, cada vez que hay un cambio se envía un un request a los Web Sockets del servidor (los cuales explicaremos más adelante. )
 
 ###### Código
 ```
@@ -164,11 +164,11 @@ while True:
 arduino.close()
 ```
  
-Código del servidor web
-       Acá utilizamos un framework web escrito en python llamado Flask, esto nos permite montar un servidor para poder ver los cambios en tiempo real mediante el uso de una librería de web sockets, y mejorar la manera en la que el usuario accede al sistema de monitoreo de la casa. El puerto utilizado fue el 5000 (puerto por defecto). A continuación encontraremos el código comentado. 
+###### Código del servidor web
+Acá utilizamos un framework web escrito en python llamado Flask, esto nos permite montar un servidor para poder ver los cambios en tiempo real mediante el uso de una librería de web sockets, y mejorar la manera en la que el usuario accede al sistema de monitoreo de la casa. El puerto utilizado fue el 5000 (puerto por defecto). A continuación encontraremos el código comentado. 
 
 
-###### Código en Python
+###### Código
 ```
 from flask import Flask,render_template, url_for, flash, redirect, request, jsonify
 from flask_socketio import SocketIO, send, emit
@@ -196,18 +196,10 @@ def handle_message(message):
 
 if __name__ == '__main__':
    socketio.run(app)
- 
-·      Interfaz final web 
-
-      Como lenguaje de programación utilizamos HTML , acá definimos cada una de las etiquetas (puertas , ventanas , contador, temperatura, etc) y es desde donde el usuario podrá monitorear el sistema completo. 
-
-  Para la parte del cambio de estado utilizamos funciones de javascript, que traducen lo que enviamos a cambios visuales en el sistema. (Apagado-Encendido)
-
-      Para la parte de diseño utilizamos tags básicos de CSS en donde definimos estilos , colores y la organización de la página web. Ahora bien, si se desea revisar este código, se dejará el Link del repositorio en github. 
 ```
+###### Interfaz final web 
+Como lenguaje de programación utilizamos HTML , acá definimos cada una de las etiquetas (puertas , ventanas , contador, temperatura, etc) y es desde donde el usuario podrá monitorear el sistema completo. Para la parte del cambio de estado utilizamos funciones de javascript, que traducen lo que enviamos a cambios visuales en el sistema. (Apagado-Encendido) Para la parte de diseño utilizamos tags básicos de CSS en donde definimos estilos , colores y la organización de la página web. Ahora bien, si se desea revisar este código, se dejará el Link del repositorio en github. 
 
- 
- 
 ###### Resultados
 Al finalizar el proyecto final de la materia pudimos realmente ver las aplicaciones prácticas y funcionales de todos los temas que vimos durante el transcurso de la clase. Adicionalmente fuimos capaces de arquitectar una solución de un campo que cada día se expande más (Internet de las cosas) y con este, llevamos a nuestro proyecto a un ámbito de producción casi-real con herramientas fundamentales en la vida del ingeniero moderno (Arduino, infraestructura y servidores web).
 Una vez completado comenzamos a reflexionar y nos dimos cuenta de que realmente (Aunque fuimos un grupo de solamente dos personas) paso a paso se pueden obtener los conocimientos necesarios para realizar un trabajo del que nos sintamos orgullosos, que nos motive a aprender nuevas tecnologías y que nos acerque a las soluciones que hoy en día se están desarrollando en el mundo de la domótica y automatización.   
