@@ -200,16 +200,16 @@ if __name__ == '__main__':
 ###### Interfaz final web 
 Como lenguaje de programación utilizamos HTML , acá definimos cada una de las etiquetas (puertas , ventanas , contador, temperatura, etc) y es desde donde el usuario podrá monitorear el sistema completo. Para la parte del cambio de estado utilizamos funciones de javascript, que traducen lo que enviamos a cambios visuales en el sistema. (Apagado-Encendido) Para la parte de diseño utilizamos tags básicos de CSS en donde definimos estilos , colores y la organización de la página web. Ahora bien, si se desea revisar este código, se dejará el Link del repositorio en github. 
 
-###### Resultados
+## Resultados
 Al finalizar el proyecto final de la materia pudimos realmente ver las aplicaciones prácticas y funcionales de todos los temas que vimos durante el transcurso de la clase. Adicionalmente fuimos capaces de arquitectar una solución de un campo que cada día se expande más (Internet de las cosas) y con este, llevamos a nuestro proyecto a un ámbito de producción casi-real con herramientas fundamentales en la vida del ingeniero moderno (Arduino, infraestructura y servidores web).
 Una vez completado comenzamos a reflexionar y nos dimos cuenta de que realmente (Aunque fuimos un grupo de solamente dos personas) paso a paso se pueden obtener los conocimientos necesarios para realizar un trabajo del que nos sintamos orgullosos, que nos motive a aprender nuevas tecnologías y que nos acerque a las soluciones que hoy en día se están desarrollando en el mundo de la domótica y automatización.   
 
-###### Conclusiones 
+## Conclusiones 
 - Aunque nos falta mucho por aprender estamos en la capacidad de diseñar soluciones con los temas vistos en clase. 
 - El autoaprendizaje es una herramienta fundamental. 
 - El trabajo en equipo debe ser gestionado de la mejor manera posible para evitar problemas y siempre actuar de manera ética frente a la asignatura. 
  
-###### Referencias 
+## Referencias 
  
 [1] Thomas L. Floyd “Fundamentos de Sistemas Digitales” 11ª ed., Ed Pearson Education S.A., 2006
 
