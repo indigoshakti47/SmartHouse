@@ -1,12 +1,12 @@
 # Diseño e Implementación de Circuitos contadores.
 ## Informe de laboratorio
 
-Nathalia Ávila
-Pascal Arévalo
-Mayo 2019
-
-Universidad de La Sabana
-Ingeniería informática
+Nathalia Ávila\
+Pascal Arévalo\
+Mayo 2019\
+\
+Universidad de La Sabana\
+Ingeniería informática\
 Lógica Digital
  
  
@@ -15,9 +15,9 @@ Para la integración de cada uno de los circuitos o módulos realizados y explic
 
 ## Objetivos
 
-Lograr diseñar una lógica de multiplexado de señales 
-Conectar el arduino con la lógica digital del proyecto 
-Leer los inputs registrados en un servidor web que actualice los cambios en tiempo real. 
+- Lograr diseñar una lógica de multiplexado de señales 
+- Conectar el arduino con la lógica digital del proyecto 
+- Leer los inputs registrados en un servidor web que actualice los cambios en tiempo real. 
 
 ## Marco Teórico - Punto parcial 
 
